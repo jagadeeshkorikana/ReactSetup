@@ -6,6 +6,7 @@ interface IState{
 };
 class Todos extends React.Component<IProps, IState> {
     inputtext:any;
+    deletethis:any;
     public listItems:any;
     constructor(){
         super();
@@ -22,13 +23,13 @@ class Todos extends React.Component<IProps, IState> {
         });
         this.inputtext.value="";
     }
-    deleteTodo(event2:any){
+    deleteTodo(todo:string){
         let todos_list = this.state.todos_list;
         console.log(todos_list);
         this.setState({
-           todos_list:todos_list.map((todoitem:string)=>{
-                    if(todoitem!="aaa"){return true; }
-                    else {return false;}
+           todos_list:todos_list.filter((todoitem:string)=>{
+                    if(todoitem==todo){return false;}
+                    else {return true;}
                }
            )
         });
@@ -38,14 +39,14 @@ class Todos extends React.Component<IProps, IState> {
     render(){
         let todos = this.state.todos_list;
 		let todosDisplay = todos.map((todo, i)=>{
-			return <li key={i}>{todo}</li>;
+			return <li key={i}>{todo} <span onClick={()=>{this.deleteTodo(todo)}}>X</span></li>;
 		});
         return <div>
+            <h2>Todos Task</h2>
             <form onSubmit={this.addTodo}>
                 <input type="text" ref={(input)=>{
                         this.inputtext=input;
                 }}/>
-                <input type="button" value="click" onClick={this.deleteTodo}/>
             </form>
             <ul>
            {todosDisplay}

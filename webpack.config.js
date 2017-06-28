@@ -1,5 +1,5 @@
 module.exports = {
-	entry: './ts/index.tsx',
+	entry: './ts/index3.tsx',
 	
 	output: {
 		filename: 'react-demo.js',
