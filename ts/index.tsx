@@ -20,6 +20,7 @@ class DemoApp extends React.Component<IProps, IState> {
     {
         return (
         <div>
+            <h2>Task: Simple Rendering</h2>
             <Header/>
             <Content/>
             <Jagadeesh/>
@@ -49,7 +50,6 @@ class Content extends React.Component<IProps, IState>{
         );
     }
 }
-//ReactDom.render(<Jagadeesh/>,document.getElementById("DemoApp"));
 //export default DemoApp;
 
 ReactDom.render(

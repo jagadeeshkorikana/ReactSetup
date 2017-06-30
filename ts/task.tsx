@@ -63,7 +63,7 @@ class Todos extends React.Component<IProps, IState> {
 			return <li key={i} style={{textDecoration:(todo.todo_status=="ACTIVE")?"none":"line-through"}}  onClick={()=>{this.toggleTodo(todo.todo_id)}}><span onClick={(eventone)=>{this.deleteTodo(eventone,todo.todo_id)}}>X</span>{todo.todo_text}</li>;
 		});
 		return <div>
-          <h2>Task: Filter Todo</h2>
+          <h2>Task: Add Todo, Delete Todo, Toggle Todo and Filter-Completed</h2>
             <form onSubmit={this.addTodo}>
                 <input type="text" ref={(input)=>{
                         this.inputtext=input;

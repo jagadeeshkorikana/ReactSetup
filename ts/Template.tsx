@@ -8,6 +8,7 @@ class Todos extends React.Component<IProps, IState> {
 	}
 	render() {
 		return <div>
+			<h2>Task:Sample React template</h2>
 		</div>;
 	}
 }

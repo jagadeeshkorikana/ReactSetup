@@ -41,7 +41,7 @@ class Todos extends React.Component<IProps, IState> {
 			return <li key={i}><span onClick={()=>{this.deleteTodo(todo.todo_id)}}>X</span>{todo.todo_text}</li>;
 		});
 		return <div>
-          <h2>Todos TaskOne</h2>
+          <h2>Task: Add Todo and Deleted Todo</h2>
             <form onSubmit={this.addTodo}>
                 <input type="text" ref={(input)=>{
                         this.inputtext=input;
