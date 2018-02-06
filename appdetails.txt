@@ -1,0 +1,30 @@
+bots04022018 - Name
+7788dfdb-96f3-4842-b46c-384229892369 - app ID
+celmTKGBH05[!~jrcLI168: - pwd
+
+
+newbot04
+f0d58e16-24a8-4de1-adc7-fac216a38967
+cdTAY0127;{~xztdxABMM7]
+
+
+
+
+Page ID
+193135224754934
+
+App ID
+208074149742862
+Secret
+020f1c9d94b18f7504a534c24e0a0c93
+
+PageAccessToken:
+EAAC9PgnISQ4BAFlxO943UvB2YH4lZCj23q9ZCyaQZA8YGe7Aa05VWno2FspKhHrPskDGajmHuWGUzPz456ijfSUa2KbMdBRKS6ZCg4SkqlS9Q49j8iRCSzoZBwxfd0YYmw924O9yD4dNQN5IAZA4NKPWsmX68PnD37035opmrdlAZDZD
+
+
+https://termsfeed.com/privacy-policy/8c06ebbe4a6ea29e33f45de894b37be6
+
+
+ngrok http 21238 -host-header="http://localhost:21238/Login/Index"
+
+ngrok http [port] -host-header="localhost:[port]"
